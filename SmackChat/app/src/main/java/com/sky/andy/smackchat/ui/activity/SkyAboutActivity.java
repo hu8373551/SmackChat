@@ -40,13 +40,13 @@ public class SkyAboutActivity extends BaseActivity implements TopBarViewWithLayo
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("https://github.com/hu8373551/SmackChat/blob/master/README.md");
         webView.setWebViewClient(new WebSiteClient());
+        showProgressDialog();
     }
 
     private class WebSiteClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             view.loadUrl(url);
-            showProgressDialog();
             return true;
         }
 
