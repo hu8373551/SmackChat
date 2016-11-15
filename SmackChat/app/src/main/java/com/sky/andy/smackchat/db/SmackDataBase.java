@@ -58,6 +58,15 @@ public class SmackDataBase {
     public static final String F_HEAD_IMAGE = "f_head_image";
     public static final String F_CURRENT_USER_JID = "f_current_user_jid";
 
+    //===============新的朋友==========================
+    public static final String NEW_FRIEND_TABLE = "new_friend_table";
+    public static final String N_JID = "n_jid";
+    public static final String N_FULL_JID = "n_full_jid";
+    public static final String N_NAME = "n_name";
+    public static final String N_HEAD_IMAGE = "n_head_image";
+    public static final String N_STATUS = "n_status";
+    public static final String N_CURRENT_USER_JID = "n_current_user_jid";
+
 
     public SmackDataBase(Context context) {
         database = this;
@@ -113,6 +122,17 @@ public class SmackDataBase {
                         + F_CURRENT_USER_JID + " TEXT,"
                         + F_HEAD_IMAGE + " BLOB)";
                 mSQLiteDatabase.execSQL(createFriendTableSql);
+
+                //新朋友
+                String createNewFriendTableSql = " CREATE TABLE " + NEW_FRIEND_TABLE +
+                        "(" + AUTOINCREMENT_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                        + N_JID + " TEXT,"
+                        + N_FULL_JID + " TEXT,"
+                        + N_NAME + " TEXT,"
+                        + N_HEAD_IMAGE + " BLOB,"
+                        + N_CURRENT_USER_JID + " TEXT,"
+                        + N_STATUS + " INTEGER)";
+                mSQLiteDatabase.execSQL(createNewFriendTableSql);
             }
             mSQLiteDatabase.setVersion(DATABASE_VERSION);
         }

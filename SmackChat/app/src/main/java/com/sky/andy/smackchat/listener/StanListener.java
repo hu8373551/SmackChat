@@ -35,14 +35,10 @@ public class StanListener implements StanzaListener {
             if (presence.getType().equals(Presence.Type.subscribe)) {
                 System.out.println("收到添加请求！");
                 Log.e("hcc", "request__add friends-->>");
-                //发送广播传递发送方的JIDfrom及字符串
-//                        acceptAdd = "收到添加请求！";
-//                        Intent intent = new Intent();
-//                        intent.putExtra("fromName", from);
-//                        intent.putExtra("acceptAdd", acceptAdd);
-//                        intent.setAction("com.example.eric_jqm_chat.AddFriendActivity");
-//                        sendBroadcast(intent);
+
+
                 EventBus.getDefault().post(new AddFriendModel(from));
+
             } else if (presence.getType().equals(
                     Presence.Type.subscribed)) {
                 //发送广播传递response字符串
