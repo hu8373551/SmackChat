@@ -9,7 +9,6 @@ import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.widget.Toast;
 
 import com.sky.andy.smackchat.R;
 import com.sky.andy.smackchat.base.BaseActivity;
@@ -73,16 +72,16 @@ public class SkyMainActivity extends BaseActivity implements TabLayout.OnTabClic
         mMyBar.setOnTopBarClickListener(new TopBarViewWithLayout.onTopBarClickListener() {
             @Override
             public void onClickLeftButton() {
-                if (SmackManager.getInstance().logout()) {
-                    Log.e("hcc", "is connnected-->>" + SmackManager.getInstance().isConnected());
-                    if (SmackManager.getInstance().disconnect()) {
-                        SystemUtils.getInstance().showToast(SkyMainActivity.this, "断开链接", Toast.LENGTH_SHORT);
-                    } else {
-                        SystemUtils.getInstance().showToast(SkyMainActivity.this, "断开链接失败", Toast.LENGTH_SHORT);
-                    }
-                } else {
-                    SystemUtils.getInstance().showToast(SkyMainActivity.this, "无法注销", Toast.LENGTH_SHORT);
-                }
+//                if (SmackManager.getInstance().logout()) {
+//                    Log.e("hcc", "is connnected-->>" + SmackManager.getInstance().isConnected());
+//                    if (SmackManager.getInstance().disconnect()) {
+//                        SystemUtils.getInstance().showToast(SkyMainActivity.this, "断开链接", Toast.LENGTH_SHORT);
+//                    } else {
+//                        SystemUtils.getInstance().showToast(SkyMainActivity.this, "断开链接失败", Toast.LENGTH_SHORT);
+//                    }
+//                } else {
+//                    SystemUtils.getInstance().showToast(SkyMainActivity.this, "无法注销", Toast.LENGTH_SHORT);
+//                }
             }
 
             @Override
