@@ -169,7 +169,7 @@ public class TopBarViewWithLayout extends RelativeLayout {
     }
 
     // 设置 rightLayout 显示 与否
-    public void setrightLayoutShow(boolean show) {
+    public void setRightLayoutShow(boolean show) {
         if (show) {
             rightLayout.setVisibility(VISIBLE);
         } else {

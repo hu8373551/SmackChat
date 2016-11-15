@@ -143,6 +143,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tv_about"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_centerVertical="true"

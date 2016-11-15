@@ -16,6 +16,7 @@ import com.sky.andy.smackchat.Constants;
 import com.sky.andy.smackchat.R;
 import com.sky.andy.smackchat.bean.UserInfo;
 import com.sky.andy.smackchat.manager.SmackManager;
+import com.sky.andy.smackchat.ui.activity.SkyAboutActivity;
 import com.sky.andy.smackchat.ui.activity.SkyLoginActivity;
 import com.sky.andy.smackchat.ui.activity.SkyUpdateActivity;
 import com.sky.andy.smackchat.utils.SystemUtils;
@@ -61,6 +62,9 @@ public class SkyMySelfFragment extends BaseFragment implements OutDialogView.OnO
 
     @BindView(R.id.tv_out)
     TextView tv_out;
+
+    @BindView(R.id.tv_about)
+    TextView tv_about;
 
     private OutDialogView outDialogView;
 
@@ -109,6 +113,11 @@ public class SkyMySelfFragment extends BaseFragment implements OutDialogView.OnO
     @OnClick(R.id.tv_out)
     public void outOnClick() {
         outDialogView.show();
+    }
+
+    @OnClick(R.id.tv_about)
+    public void aboutOnClick() {
+        SystemUtils.getInstance().showActivity(SkyAboutActivity.class, getActivity());
     }
 
 
