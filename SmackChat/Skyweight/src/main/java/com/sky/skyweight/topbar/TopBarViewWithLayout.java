@@ -164,7 +164,7 @@ public class TopBarViewWithLayout extends RelativeLayout {
         if (show) {
             leftLayout.setVisibility(VISIBLE);
         } else {
-            leftLayout.setVisibility(GONE);
+            leftLayout.setVisibility(INVISIBLE);
         }
     }
 
@@ -173,7 +173,7 @@ public class TopBarViewWithLayout extends RelativeLayout {
         if (show) {
             rightLayout.setVisibility(VISIBLE);
         } else {
-            rightLayout.setVisibility(GONE);
+            rightLayout.setVisibility(INVISIBLE);
         }
     }
 }

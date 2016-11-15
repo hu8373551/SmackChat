@@ -4,19 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.sky.skyweight.topbar.TopBarViewWithLayout
-        xmlns:myBar="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/my_bar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimary"
-        myBar:myLeftTvColor="@color/white"
-        myBar:myLeftTvSize="16sp"
-        myBar:myRightTvColor="@color/white"
-        myBar:myRightTvSize="16sp"
-        myBar:myTvColor="@color/white"
-        myBar:myTvSize="18sp"
-        />
+    <include layout="@layout/my_top_bar_layout"/>
 
     <WebView
         android:id="@+id/web_view"

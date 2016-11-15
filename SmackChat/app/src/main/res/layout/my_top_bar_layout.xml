@@ -14,5 +14,7 @@
         myBar:myLeftTvSize="16sp"
         myBar:myRightTvColor="@color/white"
         myBar:myRightTvSize="16sp"
+        myBar:myTvColor="@color/white"
+        myBar:myTvSize="18sp"
         />
 </LinearLayout>

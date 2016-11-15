@@ -32,10 +32,11 @@ public class SkyAboutActivity extends BaseActivity implements TopBarViewWithLayo
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         ButterKnife.bind(this);
+        my_bar.setTvTitle("关于云信");
         my_bar.setLeftLayoutShow(true);
         my_bar.setLeftImageRecource(R.drawable.back_btn);
-        my_bar.setOnTopBarClickListener(this);
         my_bar.setRightLayoutShow(false);
+        my_bar.setOnTopBarClickListener(this);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("https://github.com/hu8373551/SmackChat/blob/master/README.md");
         webView.setWebViewClient(new WebSiteClient());
