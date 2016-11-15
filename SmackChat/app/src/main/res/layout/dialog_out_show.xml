@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@color/color_40000000"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/ly_size_10"
+              android:paddingLeft="@dimen/ly_size_20"
+              android:paddingRight="@dimen/ly_size_20"
+              android:paddingTop="@dimen/ly_size_20">
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10"
+        android:text="注销"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10"
+        android:text="退出应用"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

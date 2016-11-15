@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/touch_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_10">
+
+    <ImageView
+        android:id="@+id/head_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_tab_contact"/>
+
+    <TextView
+        android:id="@+id/text_friend_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/user_status"
+        android:layout_toRightOf="@+id/head_image"
+        android:text="aaa"/>
+
+
+    <TextView
+        android:id="@+id/user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="[离线]"/>
+</RelativeLayout>

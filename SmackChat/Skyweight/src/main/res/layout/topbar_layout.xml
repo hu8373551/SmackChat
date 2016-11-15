@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/leftImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/leftText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leftImage"
+            android:text="left"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="title"/>
+
+    <RelativeLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/rightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/rightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rightImage"
+            android:layout_centerHorizontal="true"
+            android:text="right"/>
+    </RelativeLayout>
+
+</RelativeLayout>

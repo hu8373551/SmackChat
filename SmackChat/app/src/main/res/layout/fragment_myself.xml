@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_ECECEC"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:background="@drawable/touch_bg"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头像"
+                android:textColor="@color/color_1e1e1e"/>
+
+
+            <ImageView
+                android:id="@+id/my_header_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/add_icon"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/gray_ECECEC"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/touch_bg"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="昵称"
+                android:textColor="@color/color_1e1e1e"/>
+
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Crazy_name"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/gray_ECECEC"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_jid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/touch_bg"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="云信号"
+                android:textColor="@color/color_1e1e1e"/>
+
+
+            <TextView
+                android:id="@+id/tv_jid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="hucc@172.16.1.11"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_new_friend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/touch_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="新的朋友"
+            android:textColor="@color/color_1e1e1e"/>
+
+        <TextView
+            android:id="@+id/tv_new_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@drawable/conversation_unread_count_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/touch_bg"
+            android:gravity="center_vertical"
+            android:text="关于云信"
+            android:textColor="@color/color_1e1e1e"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:background="@color/gray_ECECEC"/>
+
+        <TextView
+            android:id="@+id/tv_out"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/touch_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:text="退出"
+            android:textColor="@color/color_1e1e1e"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

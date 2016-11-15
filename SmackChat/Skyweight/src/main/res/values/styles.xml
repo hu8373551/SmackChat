@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeAfter" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--自定义TopBar属性-->
+    <declare-styleable name="TopBar">
+        <attr name="tvTitle" format="string"/>
+        <attr name="tvTitleTextSize" format="dimension"/>
+        <attr name="tvTitleTextColor" format="color|reference"/>
+        <attr name="leftTextSize" format="dimension"/>
+        <attr name="leftTextColor" format="color|reference"/>
+        <attr name="leftTitle" format="string"/>
+        <attr name="leftBackground" format="color|reference"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightTextColor" format="color|reference"/>
+        <attr name="rightTitle" format="string"/>
+        <attr name="rightBackground" format="color|reference"/>
+    </declare-styleable>
+
+    <!--自定义bar-->
+    <declare-styleable name="MyBar">
+        <attr name="myLeftTvTitle" format="string"/>
+        <attr name="myLeftTvSize" format="dimension"/>
+        <attr name="myLeftTvColor" format="reference|color"/>
+        <attr name="myLeftImg" format="reference|color"/>
+
+        <attr name="myRightTvTitle" format="string"/>
+        <attr name="myRightTvSize" format="dimension"/>
+        <attr name="myRightTvColor" format="reference|color"/>
+        <attr name="myRightImg" format="reference|color"/>
+
+        <attr name="myTvTitle" format="string"/>
+        <attr name="myTvSize" format="dimension"/>
+        <attr name="myTvColor" format="reference|color"/>
+    </declare-styleable>
+
+
+</resources>

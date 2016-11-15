@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_1e1e1e">#1e1e1e</color>
+    <color name="chat_keyboard_bg">#ECECEC</color>
+    <!-- 自定义控件topTitleBar的默认背景色 -->
+    <color name="blue_18B5EA">#18B5EA</color>
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="transparency">#00000000</color><!--透明 -->
+
+    <color name="red_FF409a">#FF409a</color>
+    <color name="gray_ECECEC">#ECECEC</color>
+    <color name="gray_9b9b9b">#9b9b9b</color>
+    <color name="white_dddddd">#dddddd</color>
+</resources>

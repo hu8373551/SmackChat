@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.sky.skyweight.topbar.TopBarViewWithLayout
+        xmlns:myBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        myBar:myLeftTvColor="@color/white"
+        myBar:myLeftTvSize="16sp"
+        myBar:myLeftTvTitle="@string/text_sky_chat"
+        myBar:myRightTvColor="@color/white"
+        myBar:myRightTvSize="16sp"
+        myBar:myRightTvTitle="添加好友"
+        />
+
+    <View
+        android:id="@+id/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:layout_above="@+id/tab_layout"
+        android:background="@color/gray_9b9b9b"/>
+
+    <com.sky.skyweight.tablayout.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gray_line"
+        android:layout_below="@+id/my_bar"/>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <com.sky.skyweight.topbar.TopBarViewWithLayout
+        xmlns:myBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        myBar:myLeftImg="@drawable/back_btn"
+        myBar:myRightTvColor="@color/white"
+        myBar:myRightTvSize="16sp"
+        myBar:myRightTvTitle="Right"
+        myBar:myTvSize="16sp"
+        myBar:myTvColor="@color/white"
+        myBar:myTvTitle="title"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_bg_shape">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7fd8d8d8"/>
+
+        <com.sky.andy.smackchat.utils.view.ChatKeyboard
+            android:id="@+id/ckb_chat_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/my_bar"/>
+</RelativeLayout>
