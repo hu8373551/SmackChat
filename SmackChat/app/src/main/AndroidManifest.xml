@@ -51,6 +51,11 @@
             android:name=".ui.activity.SkyAboutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
+        <activity
+            android:name=".ui.activity.SkyNewFriendsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+
 
         <activity android:name="com.zzti.andy.imagepicker.PhotoSelectorActivity"/>//选择图片
         <activity android:name="com.zzti.andy.imagepicker.PhotoPreviewActivity"/>//预览图片

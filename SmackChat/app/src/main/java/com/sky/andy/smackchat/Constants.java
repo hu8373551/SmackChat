@@ -44,4 +44,9 @@ public class Constants {
     public static final String FRIENDNUN = "friendNun";  //没有朋友
 
 
+    //=================New Friend ===========================
+    public static final int N_ALREADY_ADD = 0x01;  // 已添加
+    public static final int N_ACCECPT = 0x02;      // 接受
+    public static final int N_ALREADY_SEND = 0x03; // 已发送
+
 }

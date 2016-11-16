@@ -293,12 +293,14 @@ public class SmackDataBaseHelper {
         values.put(SmackDataBase.N_JID, newFriendModel.getN_jid());
         values.put(SmackDataBase.N_FULL_JID, newFriendModel.getN_full_jid());
         values.put(SmackDataBase.N_NAME, newFriendModel.getN_name());
+        values.put(SmackDataBase.N_INFO, newFriendModel.getN_info());
         values.put(SmackDataBase.N_HEAD_IMAGE, newFriendModel.getN_head_image());
         values.put(SmackDataBase.N_STATUS, newFriendModel.getN_status());
         values.put(SmackDataBase.N_CURRENT_USER_JID, newFriendModel.getN_current_jid());
         SQLiteDatabase db = SmackDataBase.getInstance().getSQLiteDatabase();
         //  判断是进行保存还是进行更新
         db.insert(SmackDataBase.NEW_FRIEND_TABLE, null, values);
+        Log.e("hcc", "保存完毕 saveNewFriend");
     }
 
 
@@ -324,16 +326,33 @@ public class SmackDataBaseHelper {
      *
      * @param newFriendModel
      */
-    public void updateNewFirend(NewFriendModel newFriendModel) {
+    public void updateNewFriend(NewFriendModel newFriendModel) {
         ContentValues values = new ContentValues();
         values.put(SmackDataBase.N_JID, newFriendModel.getN_jid());
         values.put(SmackDataBase.N_FULL_JID, newFriendModel.getN_full_jid());
         values.put(SmackDataBase.N_NAME, newFriendModel.getN_name());
         values.put(SmackDataBase.N_HEAD_IMAGE, newFriendModel.getN_head_image());
         values.put(SmackDataBase.N_STATUS, newFriendModel.getN_status());
+        values.put(SmackDataBase.N_INFO, newFriendModel.getN_info());
         values.put(SmackDataBase.N_CURRENT_USER_JID, newFriendModel.getN_current_jid());
         SQLiteDatabase db = SmackDataBase.getInstance().getSQLiteDatabase();
-        db.update(SmackDataBase.NEW_FRIEND_TABLE, values, SmackDataBase.F_JID + "=?", new String[]{String.valueOf
+        db.update(SmackDataBase.NEW_FRIEND_TABLE, values, SmackDataBase.N_JID + "=?", new String[]{String.valueOf
+                (newFriendModel.getN_jid())});
+        Log.e("hcc", "保存完毕 updateNewFriend");
+    }
+
+    /**
+     * 更新新朋友的状态
+     *
+     * @param newFriendModel
+     */
+    public void updateNewFriendStatus(NewFriendModel newFriendModel) {
+        ContentValues values = new ContentValues();
+        values.put(SmackDataBase.N_JID, newFriendModel.getN_jid());
+        values.put(SmackDataBase.N_STATUS, newFriendModel.getN_status());
+        values.put(SmackDataBase.N_INFO, newFriendModel.getN_info());
+        SQLiteDatabase db = SmackDataBase.getInstance().getSQLiteDatabase();
+        db.update(SmackDataBase.NEW_FRIEND_TABLE, values, SmackDataBase.N_JID + "=?", new String[]{String.valueOf
                 (newFriendModel.getN_jid())});
     }
 
@@ -356,6 +375,7 @@ public class SmackDataBaseHelper {
             newFriendModel.setN_name(c.getString(c.getColumnIndex(SmackDataBase.N_NAME)));
             newFriendModel.setN_head_image(c.getBlob(c.getColumnIndex(SmackDataBase.N_HEAD_IMAGE)));
             newFriendModel.setN_status(c.getInt(c.getColumnIndex(SmackDataBase.N_STATUS)));
+            newFriendModel.setN_info(c.getString(c.getColumnIndex(SmackDataBase.N_INFO)));
             newFriendModel.setN_current_jid(c.getString(c.getColumnIndex(SmackDataBase.N_CURRENT_USER_JID)));
             newFriendModels.add(newFriendModel);
         }

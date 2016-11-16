@@ -18,6 +18,7 @@ import com.sky.andy.smackchat.bean.UserInfo;
 import com.sky.andy.smackchat.manager.SmackManager;
 import com.sky.andy.smackchat.ui.activity.SkyAboutActivity;
 import com.sky.andy.smackchat.ui.activity.SkyLoginActivity;
+import com.sky.andy.smackchat.ui.activity.SkyNewFriendsActivity;
 import com.sky.andy.smackchat.ui.activity.SkyUpdateActivity;
 import com.sky.andy.smackchat.utils.SystemUtils;
 import com.sky.andy.smackchat.utils.view.OutDialogView;
@@ -65,6 +66,9 @@ public class SkyMySelfFragment extends BaseFragment implements OutDialogView.OnO
 
     @BindView(R.id.tv_about)
     TextView tv_about;
+
+    @BindView(R.id.rl_new_friend)
+    RelativeLayout rl_new_friend;
 
     private OutDialogView outDialogView;
 
@@ -118,6 +122,11 @@ public class SkyMySelfFragment extends BaseFragment implements OutDialogView.OnO
     @OnClick(R.id.tv_about)
     public void aboutOnClick() {
         SystemUtils.getInstance().showActivity(SkyAboutActivity.class, getActivity());
+    }
+
+    @OnClick(R.id.rl_new_friend)
+    public void newFriendOnclick() {
+        SystemUtils.getInstance().showActivity(SkyNewFriendsActivity.class, getActivity());
     }
 
 

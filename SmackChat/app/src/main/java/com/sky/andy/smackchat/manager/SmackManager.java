@@ -310,7 +310,7 @@ public class SmackManager {
     }
 
     /**
-     * 获取当前账户昵称
+     * 获取当前账户jid;
      *
      * @return
      */
@@ -604,6 +604,12 @@ public class SmackManager {
         }
     }
 
+    /**
+     * vcard 保存用户用户姓名
+     *
+     * @param userInfo
+     * @throws Exception
+     */
     public void saveUserNickName(UserInfo userInfo) throws Exception {
         Log.e("hcc", "userInfo.getBareJid()-->>" + userInfo.getBareJid() + "\n userName-->>" + userInfo.getUserName());
         VCardManager vCardManager = VCardManager.getInstanceFor(connection);

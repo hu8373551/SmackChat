@@ -63,6 +63,7 @@ public class SmackDataBase {
     public static final String N_JID = "n_jid";
     public static final String N_FULL_JID = "n_full_jid";
     public static final String N_NAME = "n_name";
+    public static final String N_INFO = "n_info";
     public static final String N_HEAD_IMAGE = "n_head_image";
     public static final String N_STATUS = "n_status";
     public static final String N_CURRENT_USER_JID = "n_current_user_jid";
@@ -131,6 +132,7 @@ public class SmackDataBase {
                         + N_NAME + " TEXT,"
                         + N_HEAD_IMAGE + " BLOB,"
                         + N_CURRENT_USER_JID + " TEXT,"
+                        + N_INFO + " TEXT,"
                         + N_STATUS + " INTEGER)";
                 mSQLiteDatabase.execSQL(createNewFriendTableSql);
             }

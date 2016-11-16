@@ -1,5 +1,7 @@
 package com.sky.andy.smackchat.bean.entry;
 
+import java.util.Arrays;
+
 /**
  * Created by hcc on 16-11-15.
  * Company MingThink
@@ -10,8 +12,17 @@ public class NewFriendModel {
     private String n_full_jid;
     private byte[] n_head_image;
     private String n_name;
+    private String n_info;
     private int n_status;
     private String n_current_jid;
+
+    public String getN_info() {
+        return n_info;
+    }
+
+    public void setN_info(String n_info) {
+        this.n_info = n_info;
+    }
 
     public String getN_current_jid() {
         return n_current_jid;
@@ -59,5 +70,18 @@ public class NewFriendModel {
 
     public void setN_status(int n_status) {
         this.n_status = n_status;
+    }
+
+    @Override
+    public String toString() {
+        return "NewFriendModel{" +
+                "n_jid='" + n_jid + '\'' +
+                ", n_full_jid='" + n_full_jid + '\'' +
+                ", n_head_image=" + Arrays.toString(n_head_image) +
+                ", n_name='" + n_name + '\'' +
+                ", n_info='" + n_info + '\'' +
+                ", n_status=" + n_status +
+                ", n_current_jid='" + n_current_jid + '\'' +
+                '}';
     }
 }
