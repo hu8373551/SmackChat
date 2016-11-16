@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.Log;
 
 import com.sky.andy.smackchat.Constants;
-import com.sky.andy.smackchat.bean.AddFriendModel;
 import com.sky.andy.smackchat.bean.entry.NewFriendModel;
 import com.sky.andy.smackchat.db.SmackDataBaseHelper;
 import com.sky.andy.smackchat.manager.SmackManager;
@@ -68,7 +67,7 @@ public class StanListener implements StanzaListener {
                         } else {
                             SmackDataBaseHelper.getInstants().saveNewFriend(newFriendModel);
                         }
-                        EventBus.getDefault().post(new AddFriendModel(from));
+//                        EventBus.getDefault().post(new AddFriendModel(from));
                     }
                 }).start();
 

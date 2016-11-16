@@ -70,6 +70,9 @@ public class SkyMySelfFragment extends BaseFragment implements OutDialogView.OnO
     @BindView(R.id.rl_new_friend)
     RelativeLayout rl_new_friend;
 
+    @BindView(R.id.tv_new_friend)
+    TextView tv_new_friend;
+
     private OutDialogView outDialogView;
 
     @Override

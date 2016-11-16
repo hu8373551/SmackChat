@@ -90,7 +90,7 @@ public class SkyNewFriendsActivity extends BaseActivity implements TopBarViewWit
                 } else {
                     SmackDataBaseHelper.getInstants().saveFriends(friendEntryModel);
                 }
-                EventBus.getDefault().post("");
+                EventBus.getDefault().post("updateView");
             }
 
             @Override

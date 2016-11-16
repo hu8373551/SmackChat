@@ -131,7 +131,8 @@
             android:layout_marginRight="@dimen/dimen_10"
             android:background="@drawable/conversation_unread_count_bg"
             android:gravity="center"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
 
     </RelativeLayout>
 

@@ -127,7 +127,9 @@ public class SkyConnectFragment extends BaseFragment implements IFriendView {
     @Subscribe(threadMode = ThreadMode.MainThread)
     public void reflashView(String str) {
         Log.e("hcc", "reflashView-->>");
-        mRecyclerAdapter.notifyDataSetChanged();
+        if (str.equals("updateView")) {
+            mRecyclerAdapter.notifyDataSetChanged();
+        }
     }
 
 
